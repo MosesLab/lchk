@@ -12,7 +12,7 @@ for i = 0, Nimages-1 do begin
 	
 	zero = float(zero)
 	
-	xtv, zero	
+	xtv, screenwidth=1900, screenheight=1024, zero	
 endfor
 
 end
