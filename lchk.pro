@@ -1,4 +1,4 @@
-index = mxml2('imageindex.xml', '/media/moses/Data/WSMR_align/mdata')
+index = mxml2('imageindex.xml', '../MOSESII_flight/')
 nan = !values.f_nan
 Nimages = n_elements(index.filename)
 
@@ -8,7 +8,7 @@ stds = fltarr(3,Nimages)
 
 for i = 0, Nimages-1 do begin 
 	moses2_read, index.filename[i],minus,zero,plus,noise,          $
-        size=index.numpixels[i], index.channels[i, *], byteorder=byteorder, error=error, directory='/media/moses/Data/WSMR_align'
+        size=index.numpixels[i], byteorder=byteorder, error=error, directory='../MOSESII_flight/'
 	
 	zero = float(zero)
 	
